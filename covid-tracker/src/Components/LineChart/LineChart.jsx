@@ -15,30 +15,34 @@ const LineChart = () => {
     {
       x: ["Total Cases"],
       y: [confirmed],
-      type: "bar",
+      type: "scatter",
+      mode: "lines+markers",
       name: "Total Cases",
-      marker: { color: "blue" },
+      line: { color: "blue" },
     },
     {
       x: ["Recovered"],
       y: [recovered],
-      type: "bar",
+      type: "scatter",
+      mode: "lines+markers",
       name: "Recovered",
-      marker: { color: "green" },
+      line: { color: "green" },
     },
     {
       x: ["Deaths"],
       y: [deaths],
-      type: "bar",
+      type: "scatter",
+      mode: "lines+markers",
       name: "Deaths",
-      marker: { color: "red" },
+      line: { color: "red" },
     },
     {
       x: ["Active Cases"],
       y: [active],
-      type: "bar",
+      type: "scatter",
+      mode: "lines+markers",
       name: "Active Cases",
-      marker: { color: "orange" },
+      line: { color: "orange" },
     },
   ];
 
@@ -47,8 +51,7 @@ const LineChart = () => {
       <Plot
         data={data}
         layout={{
-          title: "COVID-19 Cases Overview",
-          barmode: "group",
+          title: "COVID-19 Cases : Line Chart Representation",
           xaxis: { title: "Case Category" },
           yaxis: { title: "Number of Cases" },
         }}
