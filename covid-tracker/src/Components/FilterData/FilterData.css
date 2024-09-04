@@ -1,0 +1,27 @@
+.data-container {
+  width: 100%;
+  background-color: rgb(253, 251, 252);
+  text-align: center;
+}
+
+.data-filter-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 15px;
+  border: solid 2px black;
+}
+
+.display-data {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.display-data p {
+  border: solid 1px white;
+  background-color: chocolate;
+  color: white;
+  padding: 35px;
+  font-size: 20px;
+  border-radius: 10px;
+}
